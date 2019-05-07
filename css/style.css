@@ -1,0 +1,161 @@
+body{
+  background-color: #202021;
+  font-size: 14px;
+  color: #b6b8ba;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+header{
+  margin-top: 20px;
+}
+
+.container{
+  width: 920px;
+  margin: 0 auto 40px auto;
+  /*　widthを指定した上でmarginの左右をautoという値に設定することで
+  要素を中心に配置することができる　*/
+}
+
+.header-title-area{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.logo{
+  text-align: center;
+  font-size: 30px;
+  font-family: Comic Sans MS;
+}
+
+.text-sub{
+  text-align: center;
+  color: #777;
+  font-size: 17px;
+  font-family: Comic Sans MS;
+}
+
+/* .header-navigation:after {
+  clear: both;
+  display: block;
+  content: " ";
+} */
+
+/* .header-navigation li{
+  float: left; */
+  /* floatは要素を横に並べる際に使用するプロパティ。
+  これを指定することで左横並びのナビゲーションを表現 */
+  /* padding: 0 30px;
+  text-align: center;
+  list-style-type: none;
+} */
+
+/* .header-navigation li a{
+  color: #333;
+  text-decoration: none;
+} */
+
+.text-title{
+  color: #777;
+  font-family: Comic Sans MS;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: o;
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+  top: -150px;
+  left: -65px;
+  -webkit-transform: rotate(-20deg); */
+  transform: rotate(-10deg); */
+}
+
+.store-title{
+  color: #777;
+  font-family: Comic Sans MS;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+.store-url{
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+
+.store{
+  color: #777;
+  margin:7px;
+}
+
+.card-contents{
+  padding: 40px;
+  display: block;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+/* .left-contents{
+  width: 600px;
+  margin-right: 20px;
+  float: left;
+} */
+
+
+.store-list{
+  list-style-type: none;
+  /* デフォルトの状態だと、点が表示。
+  点を消したり、「・」(ナカグロ)以外に変更する際に用いる */
+  padding-left: 0;
+}
+
+/* .store-list li{
+  margin-bottom: 10px;
+} */
+
+/* .staff-list-area:after{ */
+  /* 横並びの要素を括っている.staff-list-areaのafterという擬似要素に対して */
+  /* clear: both; floatを解除するためのプロパティclear: both;を書いている */
+  /* display: block;
+  content: " ";
+} */
+
+/* .staff-list{
+  width: 150px;
+  margin-right: 35px;
+  float: left;
+}
+
+.staff-list:last-child{
+  margin-right: 0;
+} */
+/* .staff-list:last-child
+擬似要素の１つで、同じ要素が連続して並んでいる際に、
+最後の要素にだけCSSを適用することができる */
+
+/* .staff-image{
+  background: #efefef;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.staff-name{
+  text-align: center;
+} */
+
+.copyright{
+  color: #777;
+  text-align: center;
+  /* margin-top: 10px; */
+}
+
+.main:after{
+  clear: both;
+  display: block;
+  content: " ";
+}
