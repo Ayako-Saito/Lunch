@@ -15,9 +15,40 @@
                 <h2 class="logo">Where do you eat lunch?</h2>
                 <p class="text-sub">Ebisu、Yoyogi、Meguro・・・</p>
                 <p class="text-sub">5/26(Sun.) 11:30〜</p>
-                <p class="text-sub">敬称略… とよもも | とるこ缶 | 千尋 | hmym | 朝(あさ) | イルカ | みさき | Navy(ﾈｲﾋﾞｰ) </p>
+                <p class="text-sub1">敬称略… とよもも | とるこ缶 | 千尋 | hmym | 朝(あさ) | イルカ | みさき | Navy(ﾈｲﾋﾞｰ)</p>
             </div>
         </div>
+
+<!-------------------- 
+上に戻るボタン実装
+---------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+        <script>
+            jQuery(document).ready(function () {
+                var offset = 100;
+                var duration = 300;
+                jQuery(window).scroll(function () {
+                    if (jQuery(this).scrollTop() > offset) {
+                        jQuery('.pagetop').fadeIn(duration);
+                    } else {
+                        jQuery('.pagetop').fadeOut(duration);
+                    }
+                });
+
+                jQuery('.pagetop').click(function (event) {
+                    event.preventDefault();
+                    jQuery('html, body').animate({
+                        scrollTop: 0
+                    }, duration);
+                    return false;
+                })
+            });
+        </script>
+<!-------------------- 
+上に戻るボタン実装
+---------------------->
+
     </header>
 
     <div class="main">
@@ -30,39 +61,57 @@
                     <ul class="store-list">
                         <p class="store-title">❇︎ Ebisu ❇︎</p>
                         <p class="store-url">
-                        <a href="https://tabelog.com/tokyo/A1303/A130302/13005718/" target="new">TOOTH TOOTH（トゥーストゥース）</a></p>
-                        <p class="store">🚉東京都渋谷区東3-17-12 トレディカーサ恵比寿 B1F・1F  ⁑  JR恵比寿駅 西口 徒歩3分</p>
+                        <a href="https://tabelog.com/tokyo/A1303/A130302/13005718/" target="new">TOOTHTOOTH（トゥーストゥース）</a></p>
+                        <p class="store">🚉東京都渋谷区東3-17-12 トレディカーサ恵比寿 B1F・1F ⁑ JR恵比寿駅 西口 徒歩3分</p>
                         <p class="store">🍽フレンチ / パン食べ放題</p>
                         <p class="store">👛￥1,000～￥1,999</p>
                         <p class="store-comment">🗣パン食べ放題は意外と食べられない罠……</p>
 
                         <p class="store-url">
                         <a href="https://tabelog.com/tokyo/A1303/A130302/13212074/" target="new">Cheese Tavern CASCINA(チーズタバーン カシーナ)</a></p>
-                        <p class="store">東京都渋谷区恵比寿南1-11-2 1F  ⁑  JR恵比寿駅 西口 徒歩2分</p>
-                        <p class="store">イタリアン / チーズ料理</p>
-                        <p class="store">￥1,000～￥1,999</p>
-                        <p class="store-comment">ひとこと……チーズ🧀食べられないとﾑﾘｨｨ</p>
+                        <p class="store">🚉東京都渋谷区恵比寿南1-11-2 1F ⁑ JR恵比寿駅 西口 徒歩2分</p>
+                        <p class="store">🍽イタリアン / チーズ料理</p>
+                        <p class="store">👛￥1,000～￥1,999</p>
+                        <p class="store-comment">🗣チーズ🧀食べられないとﾑﾘｨｨ</p>
                 </div>
 
                 <div class="card-contents">
                     <h2 class="text-title">Candidate2</h2>
-                        <a href="" target="new"></a>
-                        <p class="store"></p>
-                        <p class="store"></p>
-                        <p class="store-comment"></p>
+                    <p class="store-title">❇︎ Yoyogi ❇︎</p>
+                    <p class="store-url">
+                    <a href="https://tabelog.com/tokyo/A1318/A131810/13172663/" target="new">ラ ブォナ ヴィータ</a></p>
+                    <p class="store">🚉東京都渋谷区代々木1-45-4 代々木山陽ビル 1F ⁑ JR代々木駅 徒歩5分 / 小田急 南新宿駅 徒歩3分</p>
+                    <p class="store">🍽イタリアン</p>
+                    <p class="store">👛￥1,000～￥1,999</p>
+                    <p class="store-comment">🗣美味しいぃぃって口コミ多い〜ウニのってる〜</p>
 
-                        <a href="" target="new"></a>
-                        <p class="store"></p>
-                        <p class="store"></p>
-                        <p class="store-comment"></p>
+                    <p class="store-url">
+                    <a href="" target="new"></a></p>
+                    <p class="store">🚉</p>
+                    <p class="store">🍽</p>
+                    <p class="store">👛</p>
+                    <p class="store-comment">🗣</p>
                 </div>
-                        <a href="" target="new"></a>
-                        <p class="store"></p>
-                        <p class="store"></p>
-                        <p class="store-comment"></p>                       
+                <div class="card-contents">
+                    <h2 class="text-title">Candidate3</h2>
+                    <p class="store-title">❇︎ Meguro ❇︎</p>
+                    <p class="store-url">
+                    <a href="" target="new"></a></p>
+                    <p class="store">🚉</p>
+                    <p class="store">🍽</p>
+                    <p class="store">👛</p>
+                    <p class="store-comment">🗣</p>
 
-                    </ul>
-                
+                    <p class="store-url">
+                    <a href="" target="new"></a></p>
+                    <p class="store">🚉</p>
+                    <p class="store">🍽</p>
+                    <p class="store">👛</p>
+                    <p class="store-comment">🗣</p>
+                </div>
+
+                </ul>
+
 
             </div>
 
@@ -72,7 +121,8 @@
     <footer>
         <p class="copyright">お布団が恋人ニャ〜♪ 🐈</p>
     </footer>
-
+    
+    <div class="pagetop">↑</div> <!-- 上に戻るボタン実装 -->
 </body>
 
 </html>

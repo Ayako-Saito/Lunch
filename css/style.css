@@ -28,36 +28,23 @@ header{
 .logo{
   color: #b6b8ba;
   text-align: center;
-  font-size: 30px;
+  font-size: 37px;
   font-family: Comic Sans MS;
 }
 
 .text-sub{
   text-align: center;
   color: #777;
-  font-size: 17px;
+  font-size: 22px;
   font-family: Comic Sans MS;
 }
 
-/* .header-navigation:after {
-  clear: both;
-  display: block;
-  content: " ";
-} */
-
-/* .header-navigation li{
-  float: left; */
-  /* floatは要素を横に並べる際に使用するプロパティ。
-  これを指定することで左横並びのナビゲーションを表現 */
-  /* padding: 0 30px;
+.text-sub1{
   text-align: center;
-  list-style-type: none;
-} */
-
-/* .header-navigation li a{
-  color: #333;
-  text-decoration: none;
-} */
+  color: #777;
+  font-size: 17px;
+  font-family: Comic Sans MS;
+}
 
 .text-title{
   color: #777;
@@ -70,19 +57,19 @@ header{
   position: relative;
   top: -150px;
   left: -65px;
-  -webkit-transform: rotate(-22deg); */
+  -webkit-transform: rotate(-23deg); */
   transform: rotate(-10deg); */
 }
 
 .store-title{
   color: #777;
   font-family: Comic Sans MS;
-  font-size: 17px;
+  font-size: 18px;
   margin-bottom: 0px;
 }
 
 .store-url{
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 7px;
 }
 
@@ -111,55 +98,12 @@ a:hover {
   background-color: #e1baef;
 }
 
-/* .left-contents{
-  width: 600px;
-  margin-right: 20px;
-  float: left;
-} */
-
-
 .store-list{
   list-style-type: none;
   /* デフォルトの状態だと、点が表示。
   点を消したり、「・」(ナカグロ)以外に変更する際に用いる */
   padding-left: 0;
 }
-
-/* .store-list li{
-  margin-bottom: 10px;
-} */
-
-/* .staff-list-area:after{ */
-  /* 横並びの要素を括っている.staff-list-areaのafterという擬似要素に対して */
-  /* clear: both; floatを解除するためのプロパティclear: both;を書いている */
-  /* display: block;
-  content: " ";
-} */
-
-/* .staff-list{
-  width: 150px;
-  margin-right: 35px;
-  float: left;
-}
-
-.staff-list:last-child{
-  margin-right: 0;
-} */
-/* .staff-list:last-child
-擬似要素の１つで、同じ要素が連続して並んでいる際に、
-最後の要素にだけCSSを適用することができる */
-
-/* .staff-image{
-  background: #efefef;
-  margin-bottom: 10px;
-  width: 150px;
-  height: 150px;
-  display: block;
-}
-
-.staff-name{
-  text-align: center;
-} */
 
 .copyright{
   color: #777;
@@ -171,4 +115,28 @@ a:hover {
   clear: both;
   display: block;
   content: " ";
+}
+/* --------------------------
+上に戻るボタン実装
+--------------------------- */
+.pagetop {
+	color: #202021;
+	background-color: #fff;
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 2.7rem;
+	height: 2.7rem;
+	line-height: 2.7rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #1c89ef !important;
+	background-color: #e1baef;
+	text-decoration: none;
 }
