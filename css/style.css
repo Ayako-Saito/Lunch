@@ -1,52 +1,56 @@
-body{
+body {
   background-color: #202021;
   font-size: 14px;
   margin: 0;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0 0 10px 0;
   padding: 0;
 }
 
-header{
+header {
   margin-top: 20px;
 }
 
-.container{
+.container {
   width: 920px;
   margin: 0 auto 40px auto;
   /*　widthを指定した上でmarginの左右をautoという値に設定することで
   要素を中心に配置することができる　*/
 }
 
-.header-title-area{
+.header-title-area {
   margin-top: 40px;
   margin-bottom: 30px;
 }
 
-.logo{
+.logo {
   color: #b6b8ba;
   text-align: center;
   font-size: 37px;
   font-family: Comic Sans MS;
 }
 
-.text-sub{
+.text-sub {
   text-align: center;
   color: #777;
   font-size: 22px;
   font-family: Comic Sans MS;
 }
 
-.text-sub1{
+.text-sub1 {
   text-align: center;
   color: #777;
   font-size: 17px;
   font-family: Comic Sans MS;
 }
 
-.text-title{
+.text-title {
   color: #777;
   font-family: Comic Sans MS;
   font-size: 24px;
@@ -57,40 +61,34 @@ header{
   position: relative;
   top: -150px;
   left: -65px;
-  -webkit-transform: rotate(-23deg); */
-  transform: rotate(-10deg); */
+  -webkit-transform: rotate(-23deg);
+  */ transform: rotate(-10deg);
+  */
 }
 
-.store-title{
-  color: #777;
-  font-family: Comic Sans MS;
-  font-size: 18px;
-  margin-bottom: 0px;
-}
-
-.store-url{
+.store-url {
   margin-top: 30px;
   margin-bottom: 7px;
 }
 
-.store{
+.store {
   color: #777;
-  margin:7px;
+  margin: 7px;
 }
 
-.store-comment{
+.store-comment {
   color: #ad2edb;
-  margin:7px;
+  margin: 7px;
 }
 
-.card-contents{
+.card-contents {
   padding: 40px;
   display: block;
   margin-bottom: 20px;
   background-color: #fff;
 }
 
-a{
+a {
   color: #1c89ef;
 }
 
@@ -98,45 +96,46 @@ a:hover {
   background-color: #e1baef;
 }
 
-.store-list{
+.store-list {
   list-style-type: none;
   /* デフォルトの状態だと、点が表示。
   点を消したり、「・」(ナカグロ)以外に変更する際に用いる */
   padding-left: 0;
 }
 
-.copyright{
+.copyright {
   color: #777;
   text-align: center;
   /* margin-top: 10px; */
 }
 
-.main:after{
+.main:after {
   clear: both;
   display: block;
   content: " ";
 }
-/* --------------------------
-上に戻るボタン実装
+
+/* -------------------------
+上に戻るボタン
 --------------------------- */
 .pagetop {
-	color: #202021;
-	background-color: #fff;
-	text-decoration: none;
-	display: none;
-	position: fixed;
-	bottom: 1rem;
-	right: 1rem;
-	font-size: 1.5rem;
-	width: 2.7rem;
-	height: 2.7rem;
-	line-height: 2.7rem;
-	text-align: center;
-	cursor: pointer;
+  color: #202021;
+  background-color: #fff;
+  text-decoration: none;
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  line-height: 2.7rem;
+  text-align: center;
+  cursor: pointer;
 }
 
 .pagetop:hover {
-	color: #1c89ef !important;
-	background-color: #e1baef;
-	text-decoration: none;
+  color: #1c89ef !important;
+  background-color: #e1baef;
+  text-decoration: none;
 }
